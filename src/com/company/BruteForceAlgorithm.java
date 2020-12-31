@@ -17,7 +17,7 @@ public class BruteForceAlgorithm {
     public void count_ways(){
         List<Integer> usable_values = separate_usable_values(this.sum, this.unusable_values);
         int size = usable_values.size();
-        initialization_brute(usable_values, size, this.sum);
+        initialization_brute(usable_values, size, this.sum/usable_values.get(1));
         System.out.println("The algorithm find " + this.ways + " different ways.");
     }
 
